@@ -1,0 +1,43 @@
+create database AirlineReservation;
+use AirlineReservation;
+
+create table login(User_id int(10) primary key, password varchar(50));
+
+create table tickets(ticket_id int(20) primary key, name varchar(50) NOT
+NULL, age int(3), date_of_journey date, flight_id integer(20));
+
+create table flights(flight_id int(20) primary key, departure varchar(50) not null, arrival varchar(50) not null);
+
+create table feedback(comments varchar(500));
+
+insert into login values (1,NULL);
+insert into tickets values(1,"Dummy",0,NULL,NULL);
+insert into flights values(101,"New Delhi","Mumbai");
+insert into flights values(102,"New Delhi","Mumbai");
+insert into flights values(103,"New Delhi","Mumbai");
+insert into flights values(104,"New Delhi","Mumbai");
+insert into flights values(201,"New Delhi","Kolkata");
+insert into flights values(202,"New Delhi","Kolkata");
+insert into flights values(301,"New Delhi","Chennai");
+insert into flights values(401,"Mumbai","Kolkata");
+insert into flights values(402,"Mumbai","Kolkata");
+insert into flights values(501,"Mumbai","Chennai");
+insert into flights values(502,"Mumbai","Chennai");
+insert into flights values(503,"Mumbai","Chennai");
+insert into flights values(601,"Kolkata","Chennai");
+insert into flights values(602,"Kolkata","Chennai");
+insert into flights values(6001,"Chennai","Kolkata");
+insert into flights values(6002,"Chennai","Kolkata");
+insert into flights values(5003,"Chennai","Mumbai");
+insert into flights values(5002,"Chennai","Mumbai");
+insert into flights values(5001,"Chennai","Mumbai");
+insert into flights values(3001,"Chennai","New Delhi");
+insert into flights values(4002,"Kolkata","Mumbai");
+insert into flights values(4001,"Kolkata","Mumbai");
+insert into flights values(2002,"Kolkata","New Delhi");
+insert into flights values(2001,"Kolkata","New Delhi");
+insert into flights values(1004,"Mumbai","New Delhi");
+insert into flights values(1003,"Mumbai","New Delhi");
+insert into flights values(1002,"Mumbai","New Delhi");
+insert into flights values(1001,"Mumbai","New Delhi");
+show tables;
